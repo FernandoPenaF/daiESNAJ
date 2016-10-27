@@ -8,32 +8,38 @@ namespace ESNAJ
 {
     class Jugador
     {
-        private int id {get; set;}
-        private int puntos { get; set; }
-        private String escuela { get; set; }
-        private String nombre { get; set; }
-        private String trofeos { get; set; }
-        private String categoria { get; set; }
-        private String torneos { get; set; }
+        public int id { get; set; }
+        public String nombre { get; set; }
+        public String correo { get; set; }
+        public String contra { get; set; }
+        public double puntos { get; set; }
+        public int escuela { get; set; }
+        public String categoria { get; set; }
+        public int torneo;
+        public int posicion;
 
-        public Jugador(int id, int puntos, String escuela, String nombre, String trofeos, String categoria, String torneos)
+        //Alta general
+        public Jugador(int id, String nombre, String correo, String contra, double puntos, int escuela, String categoria)
         {
             this.id = id;
+            this.nombre = nombre;
+            this.correo = correo;
+            this.contra = contra;
             this.puntos = puntos;
             this.escuela = escuela;
-            this.nombre = nombre;
-            this.trofeos = trofeos;
             this.categoria = categoria;
-            this.torneos = torneos;
         }
 
-        public Jugador(int id, String cat, String nombre, String escuela)
+        //Actualizar
+        public Jugador(int id, String cat, String nombre, double puntos, int escuela, int torneo, int pos)
         {
             this.id = id;
             this.categoria = cat;
             this.nombre = nombre;
             this.escuela = escuela;
+            this.torneo = torneo;
+            this.posicion = pos;
+            this.puntos = puntos;
         }
-
     }
 }

@@ -21,8 +21,9 @@ namespace ESNAJ
             ISheet hoja = libro.GetSheetAt(0);
             IRow fila;
             ICell celda;
-            int id = 0, puntos = 0;
-            String nombre = "", trofeo = "", escuela = "", categoria = "", torneo = "";
+            int id = 0, escuela = 0, pos = 0, torneo = 0;
+            double puntos = 0;
+            String nombre = "", categoria = "";
 
             //Obtener categoria
             fila = hoja.GetRow(0);
@@ -31,46 +32,84 @@ namespace ESNAJ
             //Obtener torneo
             fila = hoja.GetRow(1);
             celda = fila.GetCell(0);
-            torneo = celda.StringCellValue;
-            
-            for (int i = 2; i < hoja.LastRowNum; i++)
-            {   
+            torneo = (int)celda.NumericCellValue;
+
+            for (int i = 2; i <= hoja.LastRowNum; i++)
+            {
                 Jugador j;
                 fila = hoja.GetRow(i);
 
                 //Ver si el ID existe
                 celda = fila.GetCell(0);
                 if (celda != null && celda.CellType == CellType.Numeric)
-                    id = (int) celda.NumericCellValue;
+                    id = (int)celda.NumericCellValue;
                 else
                     id = 0;
 
                 //SIEMPRE habrá datos en esta columna (puntos)
                 celda = fila.GetCell(1);
-                puntos = (int) celda.NumericCellValue;
+                puntos = (int)celda.NumericCellValue;
 
-                //Verificar trofeos
+                //Verificar posicion
                 celda = fila.GetCell(2);
-                if (celda != null && celda.CellType != CellType.Blank)
-                    trofeo = celda.StringCellValue;
-                else
-                    trofeo = "";
+                pos = (int)celda.NumericCellValue;
 
                 //Verificar escuela
                 celda = fila.GetCell(3);
-                if (celda != null && celda.CellType != CellType.Blank)
-                    escuela = celda.StringCellValue;
+                if (celda != null && celda.CellType != CellType.Numeric)
+                    escuela = (int)celda.NumericCellValue;
                 else
-                    escuela = "";
+                    escuela = 0;
 
-                //SIEMPRE habrá datos en esta columna (puntos)
+                //SIEMPRE habrá datos en esta columna (nombre)
                 celda = fila.GetCell(4);
                 nombre = celda.StringCellValue;
 
-                j = new Jugador(id, puntos, escuela, nombre, trofeo, categoria, torneo);
+                j = new Jugador(id, categoria, nombre, puntos, escuela, torneo, pos);
                 resp.Add(j);
             }
-            MessageBox.Show("Se leyó correctamente");
+            return resp;
+        }
+
+        public static List<Jugador> altaInicial(String nomArchivo)
+        {
+            List<Jugador> resp = new List<Jugador>();
+            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
+            HSSFWorkbook libro = new HSSFWorkbook(archivo);
+            ISheet hoja = libro.GetSheetAt(0);
+            IRow fila;
+            ICell celda;
+            int id = 0;
+            int idEscuela = 0;
+            double puntos = 0;
+            String nombre = "", correo = "", categoria = "", contra = "";
+
+            for (int i = 1; i <= hoja.LastRowNum; i++)
+            {
+                fila = hoja.GetRow(i);
+                celda = fila.GetCell(0);
+                id = (int)celda.NumericCellValue;
+
+                celda = fila.GetCell(1);
+                nombre = celda.StringCellValue;
+
+                celda = fila.GetCell(2);
+                correo = celda.StringCellValue;
+
+                celda = fila.GetCell(3);
+                contra = celda.StringCellValue;
+
+                celda = fila.GetCell(4);
+                puntos = celda.NumericCellValue;
+
+                celda = fila.GetCell(5);
+                categoria = celda.StringCellValue;
+
+                celda = fila.GetCell(6);
+                idEscuela = (int)celda.NumericCellValue;
+                Jugador j = new Jugador(id, nombre, correo, contra, puntos, idEscuela, categoria);
+                resp.Add(j);
+            }
             return resp;
         }
 
@@ -85,7 +124,7 @@ namespace ESNAJ
             int id = 0;
             String nombre = "";
 
-            for (int i = 1; i < hoja.LastRowNum; i++)
+            for (int i = 1; i <= hoja.LastRowNum; i++)
             {
                 Escuela e;
 
@@ -100,49 +139,5 @@ namespace ESNAJ
             return resp;
         }
 
-        public static List<Jugador> inscritosCargaAutomatica(String nomArchivo)
-        {
-            List<Jugador> resp = new List<Jugador>();
-            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
-            HSSFWorkbook libro = new HSSFWorkbook(archivo);
-            ISheet hoja = libro.GetSheetAt(0);
-            IRow fila;
-            ICell celda;
-            int id = 0;
-            String cat = "", nombre = "", escuela = "";
-
-            for (int i = 2; i < hoja.LastRowNum; i++)
-            {
-                Jugador j;
-
-                fila = hoja.GetRow(i);
-                celda = fila.GetCell(0);
-                if (celda != null && celda.CellType == CellType.Numeric)
-                    id = (int) celda.NumericCellValue;
-                else
-                    id = 0;
-
-                //SIEMPRE se manda una categoria
-                celda = fila.GetCell(1);
-                cat = celda.StringCellValue;
-
-                celda = fila.GetCell(2);
-                if (celda != null && celda.CellType != CellType.Blank)
-                    nombre = celda.StringCellValue;
-                else
-                    nombre = "";
-
-                //Verificar escuela
-                celda = fila.GetCell(3);
-                if (celda != null && celda.CellType != CellType.Blank)
-                    escuela = celda.StringCellValue;
-                else
-                    escuela = "";
-
-                j = new Jugador(id, cat, nombre, escuela);
-                resp.Add(j);
-            }
-            return resp;
-        }
     }
 }

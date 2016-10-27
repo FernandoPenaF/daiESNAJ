@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
+C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\
+=======
 C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
 ESNAJ
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
+C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\App.xaml
+7-2114703595
+
+21328429783
+171848152636
+elimina.xaml;MainWindow.xaml;Menu.xaml;modificar.xaml;nuevoJug.xaml;nuevoMaestro.xaml;Pruebas.xaml;
+=======
 C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\App.xaml
 6-570253897
 
 17-1788022479
 17-824495162
 elimina.xaml;MainWindow.xaml;Menu.xaml;modificar.xaml;nuevoJug.xaml;nuevoMaestro.xaml;
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
 
 False
 

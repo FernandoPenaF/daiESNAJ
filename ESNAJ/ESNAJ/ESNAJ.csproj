@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pruebas.xaml.cs">
+      <DependentUpon>Pruebas.xaml</DependentUpon>
+    </Compile>
     <Page Include="elimina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,10 +83,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Conexion.cs" />
     <Compile Include="elimina.xaml.cs">
       <DependentUpon>elimina.xaml</DependentUpon>
     </Compile>
     <Compile Include="Escuela.cs" />
+    <Compile Include="ESNAJDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Excel.cs" />
     <Compile Include="Jugador.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -106,8 +115,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
+    <Page Include="Pruebas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+=======
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorAlumnoN.cs" />
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -137,6 +154,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ESNAJDataSet.xsc">
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ESNAJDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ESNAJDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ESNAJDataSet.xss">
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

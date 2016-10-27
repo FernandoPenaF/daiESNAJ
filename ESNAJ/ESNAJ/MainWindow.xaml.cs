@@ -27,7 +27,11 @@ namespace ESNAJ
         }
         public static SqlConnection conectarBase()
         {
+<<<<<<< HEAD
+            String deConexion = "Data Source=112SALAS32;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin"; //-----------------------------------------------------------------------------------------
+=======
             String deConexion = "Data Source=112SALAS31;Initial Catalog=ESNAJ; User ID=sa;Password=sqladmin";
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
             try
             {
                 SqlConnection con = new SqlConnection(deConexion); con.Open(); return con;
@@ -67,9 +71,14 @@ namespace ESNAJ
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
+            Pruebas p = new Pruebas();
+            p.Show();
+=======
             Menu m = new Menu();
             m.Show();
             this.Close();
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
         }
     }
 }
