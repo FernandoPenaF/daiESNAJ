@@ -26,7 +26,8 @@ namespace ESNAJ
 
         Menu ventanaAnt;
 
-        public nuevoMaestro(Menu ventMenu){
+        public nuevoMaestro(Menu ventMenu)
+        {
             ventanaAnt = ventMenu;
             InitializeComponent();
         }
@@ -40,19 +41,17 @@ namespace ESNAJ
         private void btagrega_Click(object sender, RoutedEventArgs e)
         {
             con = MainWindow.conectarBase();
-            cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
-            SqlDataReader lector = cmm.ExecuteReader();
-            int nvoID = lector.GetInt32(0) + 1;
-            String query = "INSERT INTO maestro VALUES (" + nvoID + ",'" +tbNombre + "')";
+            String query = "INSERT INTO maestro VALUES ('"+ tbNombre.Text +"')";
             cmm = new SqlCommand(query, con);
             bool resp = false;
             if (cmm.ExecuteNonQuery() > 0)
                 resp = true;
-            con.Close();
-            if(resp)
+            if (resp)
                 MessageBox.Show("Se agregó correctamente");
             else
                 MessageBox.Show("No se pudo agregar");
+            con.Close();
         }
 
+    }
 }

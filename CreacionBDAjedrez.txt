@@ -40,3 +40,8 @@ CREATE TABLE usuariosGenerales(
 	idUsuario varchar(50) primary key,
 	contraseña varchar(50) not null
 );
+
+/*Se crea la tabla 'maestro' que representa a cada maestro que labora en la ESNAJ*/
+CREATE TABLE maestro(
+	idMaestro int IDENTITY(1,1) primary key,
+	nombre varchar(50) not null)
