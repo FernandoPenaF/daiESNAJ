@@ -26,12 +26,12 @@ namespace ESNAJ
 
         private void btCarga_Click(object sender, RoutedEventArgs e)
         {
-            List<Jugador> l = Excel.altaInicial("Puntos CXVIII");
+            List<Jugador> l = Excel.infoActualizar("pachon");
             for (int i = 0; i < l.Count; i++)
             {
-                ManejadorAlumnoN.alta(l[i]);
+                ManejadorAlumnoN.actualizaBase(l[i]);
             }
-            MessageBox.Show("Alta terminada");
+            MessageBox.Show("Actualizacion terminada");
         }
     }
 }

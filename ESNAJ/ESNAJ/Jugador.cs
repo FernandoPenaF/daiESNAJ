@@ -18,6 +18,7 @@ namespace ESNAJ
         public int torneo;
         public int posicion;
 
+        //Alta general
         public Jugador(int id, String nombre, String correo, String contra, double puntos, int escuela, String categoria)
         {
             this.id = id;
@@ -29,6 +30,7 @@ namespace ESNAJ
             this.categoria = categoria;
         }
 
+        //Actualizar
         public Jugador(int id, String cat, String nombre, double puntos, int escuela, int torneo, int pos)
         {
             this.id = id;

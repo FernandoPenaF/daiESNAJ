@@ -68,8 +68,6 @@ namespace ESNAJ
                 j = new Jugador(id, categoria, nombre, puntos, escuela, torneo, pos);
                 resp.Add(j);
             }
-            Console.Write("Se leyó corectamente");
-            Console.ReadKey();
             return resp;
         }
 
