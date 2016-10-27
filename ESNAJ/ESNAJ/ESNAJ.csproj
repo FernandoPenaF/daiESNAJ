@@ -115,10 +115,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Include="Pruebas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+>>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManejadorAlumnoN.cs" />

@@ -38,20 +38,20 @@ namespace ESNAJ
             cbGrados.Items.Add("Anabella");
             cbGrados.Items.Add("Rey ESNAJ");
             cbGrados.SelectedIndex = 0;
-
-            cbEscuelas.Items.Add("-----------------------------------");
-
+            
             con = MainWindow.conectarBase();
             String query = "SELECT nombre FROM escuela";
             cmm = new SqlCommand(query, con);
             SqlDataReader lector = cmm.ExecuteReader();
             lector.Read();
+            int i = 0;
             while (lector.Read())
             {
-                cbEscuelas.Items.Add(lector.GetValue(0));
+                cbEscuelas.Items.Add(lector.GetValue(i));
+                i++;
             }
             cbEscuelas.SelectedIndex = 0;
-
+            lector.Close();
         }
 
         private void btRegresar_Click(object sender, RoutedEventArgs e)
@@ -62,6 +62,20 @@ namespace ESNAJ
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
+            con = MainWindow.conectarBase();
+            int id = ManejadorAlumnoN.nuevoId();
+            
+            Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, int.Parse(cbEscuelas.Text), cbGrados.Text);
+            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" +  j.escuela + "','" + j.categoria + ")";
+            cmm = new SqlCommand(query,con);
+            bool resp;
+            if(cmm.ExecuteNonQuery() > 0)
+                resp = true;
+            if(resp)
+                MessageBox.Show("Alta exitosa");
+            else
+                MessageBox.Show("No se dió de alta");
+            con.Close();
 
         }
     }
