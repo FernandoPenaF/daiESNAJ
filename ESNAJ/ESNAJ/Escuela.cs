@@ -8,8 +8,8 @@ namespace ESNAJ
 {
     class Escuela
     {
-        private int id { get; set; }
-        private String nombre { get; set; }
+        public int id { get; set; }
+        public String nombre { get; set; }
 
         public Escuela(int id, String nombre)
         {

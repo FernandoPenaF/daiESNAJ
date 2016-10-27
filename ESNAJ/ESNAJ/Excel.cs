@@ -126,7 +126,7 @@ namespace ESNAJ
             int id = 0;
             String nombre = "";
 
-            for (int i = 1; i < hoja.LastRowNum; i++)
+            for (int i = 1; i <= hoja.LastRowNum; i++)
             {
                 Escuela e;
 
