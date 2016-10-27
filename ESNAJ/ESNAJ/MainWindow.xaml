@@ -1,0 +1,14 @@
+﻿<Window x:Class="ESNAJ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bienvenido" Height="314" Width="447" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Escuela Nacional de Ajedrez" VerticalAlignment="Top" FontSize="18" Margin="91,20,0,0" HorizontalAlignment="Left" Width="234"/>
+        <Label Content="Usuario" Margin="72,84,0,0" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Left" Width="102"/>
+        <Label Content="Contraseña" Margin="72,137,0,0" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Left" Width="84" />
+        <TextBox x:Name="tbUsu" Height="29" Margin="197,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="159"/>
+        <Button Content="Acceso" Margin="197,202,0,0" VerticalAlignment="Top" Height="29" HorizontalAlignment="Left" Width="159" Click="Button_Click_1"/>
+        <PasswordBox x:Name="tbContra" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top" Width="159" Height="29" PasswordChar="●"/>
+
+    </Grid>
+</Window>

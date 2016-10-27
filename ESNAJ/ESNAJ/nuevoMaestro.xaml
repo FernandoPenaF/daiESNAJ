@@ -1,0 +1,13 @@
+﻿<Window x:Class="ESNAJ.nuevoMaestro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Agrega maestro" Height="300" Width="300">
+    <Grid Margin="10,10,10,10">
+        <Label Content="Nombre del maestro" HorizontalAlignment="Center" Margin="57,10,58,0" VerticalAlignment="Top" FontSize="16" Width="157"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="33" Margin="64,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="btagrega" Content="Agrega" HorizontalAlignment="Left" Margin="89,123,0,0" VerticalAlignment="Top" Width="95" Height="30" Click="btagrega_Click"/>
+        <Button x:Name="btcancela" Content="Cancelar" HorizontalAlignment="Left" Margin="89,172,0,0" VerticalAlignment="Top" Width="95" Height="30" Click="btcancela_Click"/>
+
+
+    </Grid>
+</Window>
