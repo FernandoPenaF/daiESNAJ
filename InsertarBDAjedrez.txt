@@ -1,3 +1,4 @@
+/**/
 /*Insertar valores ejemplos correspondientes a la tabla ‘escuela’*/
 INSERT INTO escuela VALUES(
 	1,
