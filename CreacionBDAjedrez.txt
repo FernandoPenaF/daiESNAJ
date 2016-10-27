@@ -1,7 +1,4 @@
-﻿﻿
-  /*Creación de Base de datos ESNAJ*/
-CREATE DATABASE ESNAJ;
-  /*Se crea una tabla llamada 'escuela' para representar a la institución en donde estudia el concursante o alumno*/
+﻿﻿/*Se crea una tabla llamada 'escuela' para representar a la institución en donde estudia el concursante o alumno*/
 CREATE TABLE escuela(
 	idEscuela int primary key,
 	nombre varchar(50) not null,
