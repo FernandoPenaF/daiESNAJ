@@ -102,6 +102,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="nuevoMaestro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Menu.xaml.cs">
@@ -112,6 +116,9 @@
     </Compile>
     <Compile Include="nuevoJug.xaml.cs">
       <DependentUpon>nuevoJug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="nuevoMaestro.xaml.cs">
+      <DependentUpon>nuevoMaestro.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

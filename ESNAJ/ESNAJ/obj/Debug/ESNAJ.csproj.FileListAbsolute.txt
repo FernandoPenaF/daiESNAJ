@@ -57,3 +57,5 @@ C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
+C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
+C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
