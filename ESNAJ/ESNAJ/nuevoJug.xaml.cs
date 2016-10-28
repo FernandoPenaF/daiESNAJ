@@ -68,7 +68,7 @@ namespace ESNAJ
             Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, int.Parse(cbEscuelas.Text), cbGrados.Text);
             String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" +  j.escuela + "','" + j.categoria + ")";
             cmm = new SqlCommand(query,con);
-            bool resp;
+            bool resp = false;
             if(cmm.ExecuteNonQuery() > 0)
                 resp = true;
             if(resp)

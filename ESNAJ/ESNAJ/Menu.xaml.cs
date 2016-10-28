@@ -45,5 +45,15 @@ namespace ESNAJ
             this.Close();
         }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            List<Jugador> l = Excel.infoActualizar("pachon");
+            for (int i = 0; i < l.Count; i++)
+            {
+                ManejadorAlumnoN.actualizaBase(l[i]);
+            }
+            MessageBox.Show("Actualizacion terminada");
+        }
+
     }
 }

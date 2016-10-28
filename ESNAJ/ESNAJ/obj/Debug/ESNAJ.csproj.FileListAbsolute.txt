@@ -57,7 +57,6 @@ C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
-<<<<<<< HEAD
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csprojResolveAssemblyReference.cache
@@ -89,34 +88,6 @@ C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.OpenXml4Net.dll
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.OpenXmlFormats.dll
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.xml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.pdb
-=======
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.pdb
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.dll
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.OOXML.dll
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.OpenXml4Net.dll
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.OpenXmlFormats.dll
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\NPOI.xml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csprojResolveAssemblyReference.cache
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\elimina.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\MainWindow.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoMaestro.baml
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\elimina.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\MainWindow.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoMaestro.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\App.g.cs
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ_MarkupCompile.cache
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.g.resources
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.Properties.Resources.resources
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csproj.GenerateResource.Cache
-C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.pdb
->>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
+C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
+C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
+C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.pdb
