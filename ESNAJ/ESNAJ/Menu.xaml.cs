@@ -42,7 +42,7 @@ namespace ESNAJ
         {
             nuevoMaestro nvo = new nuevoMaestro(this);
             nvo.Show();
-            this.Close();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -57,6 +57,13 @@ namespace ESNAJ
                 ManejadorAlumnoN.actualizaBase(j[i]);
             }
             MessageBox.Show("Actualizacion terminada");
+        }
+
+        private void btactualizarTor_Click(object sender, RoutedEventArgs e)
+        {
+            Actualiza a = new Actualiza(this);
+            a.Show();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
 
     }

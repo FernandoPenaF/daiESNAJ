@@ -87,7 +87,14 @@ namespace ESNAJ
             if (lector.HasRows)
             {
                 lector.Read();
-                nuevoId = lector.GetInt32(0) + 1;
+                if (lector.IsDBNull(0))
+                {
+                    nuevoId = 1;
+                }
+                else
+                {
+                    nuevoId = lector.GetInt32(0) + 1;
+                }
             }
             lector.Close();
             con.Close();

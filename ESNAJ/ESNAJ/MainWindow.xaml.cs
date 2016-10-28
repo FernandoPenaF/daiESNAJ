@@ -27,7 +27,7 @@ namespace ESNAJ
         }
         public static SqlConnection conectarBase()
         {
-            String deConexion = "Data Source=112SALAS32;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin";
+            String deConexion = "Data Source=112SALAS14;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin";
 
             try
             {

@@ -1,0 +1,12 @@
+body{
+  font-family: "Segoe UI", sans-serif;
+  background-color: #031926;
+  color: white;
+}
+header a{
+  padding: 10px;
+}
+
+img{
+  width: 200px;
+}

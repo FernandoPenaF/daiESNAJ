@@ -8,7 +8,7 @@
         <Button x:Name="btTorneos" Content="Torneos" HorizontalAlignment="Left" Margin="214,54,0,0" VerticalAlignment="Top" Width="120" Height="35"/>
         <Button x:Name="btNuevoMaestro" Content="Nuevo Maestro" HorizontalAlignment="Left" Margin="30,127,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btNuevoMaestro_Click"/>
         <Button x:Name="brCerrar" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="232,195,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click_1"/>
-        <Button x:Name="btactualizar" Content=" Actualizar &#xD;&#xA;Información" HorizontalAlignment="Left" Margin="214,127,0,0" VerticalAlignment="Top" Width="120" Height="35"/>
+        <Button x:Name="btactualizarTor" Content="Actualizar &#xD;&#xA;  Torneo" HorizontalAlignment="Left" Margin="214,127,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btactualizarTor_Click"/>
         <Button Content="pruebacarga" HorizontalAlignment="Left" Margin="30,195,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
 
     </Grid>

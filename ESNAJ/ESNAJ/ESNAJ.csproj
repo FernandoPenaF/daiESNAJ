@@ -68,6 +68,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Torneo.cs" />
+    <Compile Include="TorneoG.cs" />
+    <Page Include="Actualiza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="elimina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,6 +82,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Actualiza.xaml.cs">
+      <DependentUpon>Actualiza.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -89,6 +98,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ESNAJDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Excel.cs" />
     <Compile Include="Jugador.cs" />
@@ -154,6 +168,17 @@
     </None>
     <None Include="ESNAJDataSet.xss">
       <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ESNAJDataSet1.xsc">
+      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ESNAJDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ESNAJDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ESNAJDataSet1.xss">
+      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
