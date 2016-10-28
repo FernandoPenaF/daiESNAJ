@@ -8,7 +8,7 @@ CREATE TABLE escuela(
 CREATE TABLE alumno(
 	idAlumno int primary key,
 	nombre varchar(50) not null,
-	correo varchar(50) not null unique,
+	correo varchar(50),
 	contra varchar(50) not null,
 	puntosTotales float not null,
 	categoria varchar(50) not null,
