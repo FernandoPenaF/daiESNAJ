@@ -70,6 +70,9 @@
     </ApplicationDefinition>
     <Compile Include="Torneo.cs" />
     <Compile Include="TorneoG.cs" />
+    <Compile Include="Torneos.xaml.cs">
+      <DependentUpon>Torneos.xaml</DependentUpon>
+    </Compile>
     <Page Include="Actualiza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +128,10 @@
     <Page Include="nuevoMaestro.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Torneos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
