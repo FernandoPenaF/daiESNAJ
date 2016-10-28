@@ -1,4 +1,4 @@
-﻿﻿/*Se crea una tabla llamada 'escuela' para representar a la institución en donde estudia el concursante o alumno*/
+﻿/*Se crea la tabla 'escuela' que representa a cada escuela inscrita en la red ESNAJ*/
 CREATE TABLE escuela(
 	idEscuela int primary key,
 	nombre varchar(50) not null,
@@ -44,4 +44,4 @@ CREATE TABLE usuariosGenerales(
 /*Se crea la tabla 'maestro' que representa a cada maestro que labora en la ESNAJ*/
 CREATE TABLE maestro(
 	idMaestro int IDENTITY(1,1) primary key,
-	nombre varchar(50) not null)
+	nombre varchar(50) not null);

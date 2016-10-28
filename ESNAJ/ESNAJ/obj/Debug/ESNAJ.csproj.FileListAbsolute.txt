@@ -66,14 +66,12 @@ C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoMaestro.baml
-C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Pruebas.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\elimina.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\MainWindow.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoMaestro.g.cs
-C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Pruebas.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\App.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ_MarkupCompile.cache
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.g.resources

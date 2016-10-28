@@ -40,9 +40,9 @@ namespace ESNAJ
             if (j.id == 0)
             {
                 int nvoId = nuevoId();
-                MessageBox.Show("ID " + nvoId);
                 if(nvoId != -1){
                     j.id = nvoId;
+                    j.contra = "default";
                     ManejadorAlumnoN.alta(j); 
                 }
             }
@@ -62,7 +62,19 @@ namespace ESNAJ
                         resp = true;
                 }
             }
+            actualizaParticipacion(j.categoria, j.posicion, j.puntos, j.id, j.torneo);
             con.Close();
+            return resp;
+        }
+
+        public static bool actualizaParticipacion(String cat, int pos, double puntos, int idAl, int idTor)
+        {
+            bool resp = false;
+            int id = nuevoIdPart();
+            SqlConnection con = Conexion.conectar();
+            SqlCommand cmd = new SqlCommand(String.Format("INSERT INTO participo(idParticipo, categoria, posicionFinal, puntajeObtenido, idAlumno, idTorneo) VALUES ('{0}','{1}', '{2}', '{3}', '{4}' ,'{5}')", id, cat, pos, puntos, idAl, idTor), con);
+            if (cmd.ExecuteNonQuery() > 0)
+                resp = true;
             return resp;
         }
 
@@ -81,5 +93,20 @@ namespace ESNAJ
             con.Close();
             return nuevoId;
         }
+
+        private static int nuevoIdPart()
+        {
+            int nuevoId = 1;
+            SqlConnection con = Conexion.conectar();
+            SqlCommand cmd = new SqlCommand("SELECT MAX(p.idParticipo) FROM participo p", con);
+            SqlDataReader lector = cmd.ExecuteReader();
+            lector.Read();
+            if (!lector.IsDBNull(0))
+                nuevoId = lector.GetInt32(0) + 1;
+            lector.Close();
+            con.Close();
+            return nuevoId;
+        }
+
     }
 }
