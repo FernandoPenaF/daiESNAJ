@@ -46,20 +46,26 @@ namespace ESNAJ
             {
                 //Se busca en la base de datos al usuario
                 con = conectarBase();
-                String query = "SELECT idUsuario,contraseña FROM usuariosGenerales WHERE  idUsuario = '" + tbUsu.Text + "' AND  contraseña = '" + tbContra.SecurePassword + "'";
+                String query = "SELECT contraseña FROM usuariosGenerales WHERE  idUsuario = '" + tbUsu.Text + "'";
                 cmm = new SqlCommand(query, con);
-
                 SqlDataReader lect = cmm.ExecuteReader();
                 lect.Read();
-                if (lect.Equals(null))
-                    MessageBox.Show("No se encontró usuario en la base de datos");
-                else
+                try
                 {
-                    lect.Close();
-                    con.Close();
-
-                    Menu ventanaMenu = new Menu();
-                    ventanaMenu.Show(); this.Close();
+                    String clav = lect.GetString(0);
+                    if (clav != tbContra.Password)
+                        MessageBox.Show("Contraseña incorrecta");
+                    else
+                    {
+                        Menu ventanaMenu = new Menu();
+                        this.Close();
+                        ventanaMenu.Show();
+                        con.Close();
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Usuario no valido");
                 }
             }
             else
