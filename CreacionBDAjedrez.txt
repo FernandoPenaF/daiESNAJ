@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-﻿/*Se crea la tabla 'escuela' que representa a cada escuela inscrita en la red ESNAJ*/
-=======
-﻿/*Se crea la base de datos ESNAJ*/
+/*Se crea la base de datos ESNAJ*/
 CREATE DATABASE ESNAJ;
 
-/*Se crea una tabla llamada 'escuela' para representar a la institución en donde estudia el concursante o alumno*/
->>>>>>> 62734e570eba1fbd8182e247d9fa17e1bfee54bc
+/*Se crea la tabla 'escuela' que representa a cada escuela inscrita en la red ESNAJ*/
 CREATE TABLE escuela(
 	idEscuela int primary key,
 	nombre varchar(50) not null);
@@ -48,7 +44,6 @@ CREATE TABLE participo(
 /*Se crea la tabla para el manejo de las personas de la institución*/
 CREATE TABLE usuariosGenerales(
 	idUsuario varchar(50) primary key,
-<<<<<<< HEAD
 	contraseña varchar(50) not null
 );
 
@@ -56,6 +51,10 @@ CREATE TABLE usuariosGenerales(
 CREATE TABLE maestro(
 	idMaestro int IDENTITY(1,1) primary key,
 	nombre varchar(50) not null);
-=======
 	contraseña varchar(50) not null);
->>>>>>> 62734e570eba1fbd8182e247d9fa17e1bfee54bc
+	
+CREATE TABLE inscrito(
+	idIncrito int IDENTITY(1,1) primary key,
+	idTorneo int REFERENCES torneo,
+	idAlumno int REFERENCES alumno
+);
