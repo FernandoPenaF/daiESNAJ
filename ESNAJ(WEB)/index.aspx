@@ -35,7 +35,7 @@
       </p>
         <form id="form1" runat="server">
             Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="tbCorreo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="tbCorreo" runat="server" OnTextChanged="tbCorreo_TextChanged"></asp:TextBox>
             <br />
             <br />
             Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -39,7 +39,7 @@ public partial class PerfilM : System.Web.UI.Page
         OdbcConnection conexion = null;
         try
         {
-            String conectar = "Driver={SQL Server Native Client 11.0};Server=112SALAS06;Uid=sa;Pwd=sqladmin;Database=ESNAJ;";
+            String conectar = "Driver={SQL Server Native Client 11.0};Server=112SALAS04;Uid=sa;Pwd=sqladmin;Database=ESNAJ;";
             conexion = new OdbcConnection(conectar);
             conexion.Open();
         }
@@ -191,5 +191,49 @@ public partial class PerfilM : System.Web.UI.Page
             lbCambios.Text = "Correo o contraseña anterior distintos";
         }
 
+    }
+    protected void baja_Click(object sender, EventArgs e)
+    {
+        if (!dropAlumnos.Text.Equals("") && !dropTorneos.Text.Equals(""))
+        {
+            OdbcConnection con = this.conectarDB();
+            String query = "SELECT * FROM alumno WHERE nombre = '" + dropAlumnos.Text + "'";
+            OdbcCommand cmm = new OdbcCommand(query, con);
+            OdbcDataReader lector = cmm.ExecuteReader();
+            lector.Read();
+            int idAlum = lector.GetInt32(0);
+            lector.Close();
+
+            query = "SELECT idTorneo FROM torneo WHERE nombre = '" + dropTorneos.Text + "'";
+            cmm = new OdbcCommand(query, con);
+            lector = cmm.ExecuteReader();
+            lector.Read();
+            int idTorneo = lector.GetInt32(0);
+            lector.Close();
+
+
+
+            try
+            {
+                query = "DELETE FROM inscrito WHERE idAlumno = " + idAlum + " AND idTorneo = " + idTorneo;
+                cmm = new OdbcCommand(query, con);
+                if(cmm.ExecuteNonQuery()>0)
+                    lbAltas.Text = "Baja exitosa";
+                else
+                    lbAltas.Text = "No se encontró registrado en ese torneo";
+            }catch(Exception ex){
+                lbAltas.Text = "Usuario no registrado en ese torneo.";
+            }
+
+           
+        }
+        else
+        {
+            if (dropAlumnos.Text.Equals(""))
+                lbAltas.Text = "Seleccione primero a un alumno";
+            else
+                lbAltas.Text = "No hay torneos disponibles";
+        }
+        
     }
 }

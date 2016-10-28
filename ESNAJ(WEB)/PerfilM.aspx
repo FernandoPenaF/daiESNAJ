@@ -46,10 +46,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
-        <asp:Button ID="btAltaAlumno" runat="server" Text="Dar de alta" OnClick="btAltaAlumno_Click" style="z-index: 1; left: 138px; top: 260px; position: absolute" />
+        <asp:Button ID="btAltaAlumno" runat="server" Text="Dar de alta" OnClick="btAltaAlumno_Click" style="z-index: 1; left: 90px; top: 256px; position: absolute" />
         <br />
         <br />
         <asp:Label ID="lbAltas" runat="server"></asp:Label>
+        <asp:Button ID="baja" runat="server" OnClick="baja_Click" style="z-index: 1; left: 222px; top: 256px; position: absolute" Text="Dar de baja" />
         <br />
         <br />
         <br />
