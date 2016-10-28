@@ -116,7 +116,7 @@ namespace ESNAJ
         public static List<Escuela> getEscuelas(String nomArchivo)
         {
             List<Escuela> resp = new List<Escuela>();
-            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
+            FileStream archivo = new FileStream(nomArchivo, FileMode.Open, FileAccess.Read);
             HSSFWorkbook libro = new HSSFWorkbook(archivo);
             ISheet hoja = libro.GetSheetAt(0);
             IRow fila;

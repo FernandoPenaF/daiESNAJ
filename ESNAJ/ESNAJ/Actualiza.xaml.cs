@@ -23,11 +23,8 @@ namespace ESNAJ
         SqlConnection cnn;
         SqlCommand cmd;
 
-        Menu ventanaAnt;
-
-        public Actualiza(Menu ventanaMenu)
+        public Actualiza()
         {
-            ventanaAnt = ventanaMenu;
             InitializeComponent();
 
             //LENADO DE COMBOBOX TORNEOS
@@ -74,9 +71,8 @@ namespace ESNAJ
 
         private void btRegresa_Click(object sender, RoutedEventArgs e)
         {
-            ventanaAnt.Show();
-            this.Hide();
-
+            Menu m = new Menu();
+            Close();
         }
 
         private void btActualiza_Click(object sender, RoutedEventArgs e)
