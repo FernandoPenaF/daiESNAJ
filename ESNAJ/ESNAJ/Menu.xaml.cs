@@ -47,10 +47,14 @@ namespace ESNAJ
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            List<Jugador> l = Excel.infoActualizar("pachon");
-            for (int i = 0; i < l.Count; i++)
+            List<Escuela> l = Excel.getEscuelas("escuela");
+            List<Jugador> j = Excel.infoActualizar("pachon");
+            List<Jugador> ju = Excel.altaInicial("Puntos CXVIII");
+            MessageBox.Show("Info leida");
+
+            for (int i = 0; i < j.Count; i++)
             {
-                ManejadorAlumnoN.actualizaBase(l[i]);
+                ManejadorAlumnoN.actualizaBase(j[i]);
             }
             MessageBox.Show("Actualizacion terminada");
         }
