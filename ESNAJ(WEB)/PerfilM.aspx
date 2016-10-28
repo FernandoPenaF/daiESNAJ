@@ -9,9 +9,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Cambiar contraseña" />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Eliminar alumno" />
+        <br />
+        <asp:Button ID="Button3" runat="server" Text="Cerrar sesión" />
     </form>
 </body>
 </html>

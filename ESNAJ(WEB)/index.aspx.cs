@@ -48,13 +48,14 @@ public partial class index : System.Web.UI.Page
                 Session["Puntos"] = lector.GetInt32(3);
                 Session["Categoria"] = lector.GetString(4);
                 Session["Escuela"] = lector.GetString(5);
+
+                Response.Redirect("PerfilA.aspx");
             }
             else
                 Label1.Text = "Usuario/Contraseña incorrectos";
             con.Close();
             lector.Close();
 
-            Response.Redirect("PerfilA.aspx");
         }
         catch (Exception ex) {
             Label1.Text = "Error interno";

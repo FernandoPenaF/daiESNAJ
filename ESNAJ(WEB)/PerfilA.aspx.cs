@@ -9,6 +9,6 @@ public partial class PerfilA : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label1.Text = "Bienvenido de nuevo: " + Session["Nombre"];
     }
 }
