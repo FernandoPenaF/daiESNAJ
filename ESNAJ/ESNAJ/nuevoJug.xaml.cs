@@ -39,7 +39,7 @@ namespace ESNAJ
             cbGrados.Items.Add("Rey ESNAJ");
             cbGrados.SelectedIndex = 0;
             
-            con = MainWindow.conectarBase();
+            con = Conexion.conectar();
             String query = "SELECT nombre FROM escuela";
             cmm = new SqlCommand(query, con);
             SqlDataReader lector = cmm.ExecuteReader();
@@ -59,26 +59,31 @@ namespace ESNAJ
 
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
-            con = MainWindow.conectarBase();
-            String query2 = "SELECT escuela.idEscuela FROM escuela WHERE nombre LIKE '" + cbEscuelas.Text +"'";
-            cmm = new SqlCommand(query2, con);
-            SqlDataReader lector = cmm.ExecuteReader();
-            lector.Read();
-            int idEsc = lector.GetInt32(0);
-            lector.Close();
-            int id = ManejadorAlumnoN.nuevoId();
-            Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, idEsc, cbGrados.Text);
-            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" + j.categoria + "','" + j.escuela + "')";
-            cmm = new SqlCommand(query,con);
-            bool resp = false;
-            if(cmm.ExecuteNonQuery() > 0)
-                resp = true;
-            if(resp)
-                MessageBox.Show("Alta exitosa");
+            if (tbContraseña.Password == tbContraseñaConf.Password)
+            {
+                con = Conexion.conectar();
+                String query2 = "SELECT escuela.idEscuela FROM escuela WHERE nombre LIKE '" + cbEscuelas.Text + "'";
+                cmm = new SqlCommand(query2, con);
+                SqlDataReader lector = cmm.ExecuteReader();
+                lector.Read();
+                int idEsc = lector.GetInt32(0);
+                lector.Close();
+                int id = ManejadorAlumnoN.nuevoId();
+                Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, idEsc, cbGrados.Text);
+                String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" + j.categoria + "','" + j.escuela + "')";
+                cmm = new SqlCommand(query, con);
+                bool resp = false;
+                if (cmm.ExecuteNonQuery() > 0)
+                    resp = true;
+                if (resp)
+                    MessageBox.Show("Alta exitosa");
+                else
+                    MessageBox.Show("No se dió de altaJugador");
+                con.Close();
+                btRegresar_Click(sender, e);
+            }
             else
-                MessageBox.Show("No se dió de altaJugador");
-            con.Close();
-
+                MessageBox.Show("Las contraseñas NO coinciden");
         }
     }
 }

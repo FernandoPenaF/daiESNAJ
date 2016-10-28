@@ -10,6 +10,7 @@
         <Button x:Name="brCerrar" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="326,195,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click_1"/>
         <Button x:Name="btactualizarTor" Content="Actualizar &#xD;&#xA;  Torneo" HorizontalAlignment="Left" Margin="30,117,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btactualizarTor_Click"/>
         <Button x:Name="btCargarDatos" Content="Cargar datos" HorizontalAlignment="Left" Margin="184,117,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="btCargarDatos_Click"/>
+        <Button x:Name="btWeb" Content="Pagina Web" HorizontalAlignment="Left" Margin="326,117,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="btWeb_Click"/>
 
     </Grid>
 </Window>

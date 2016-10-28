@@ -1,4 +1,4 @@
-/*Se crea la base de datos ESNAJ*/
+﻿/*Se crea la base de datos ESNAJ*/
 CREATE DATABASE ESNAJ;
 
 /*Se crea la tabla 'escuela' que representa a cada escuela inscrita en la red ESNAJ*/
@@ -46,12 +46,6 @@ CREATE TABLE usuariosGenerales(
 	idUsuario varchar(50) primary key,
 	contraseña varchar(50) not null
 );
-
-/*Se crea la tabla 'maestro' que representa a cada maestro que labora en la ESNAJ*/
-CREATE TABLE maestro(
-	idMaestro int IDENTITY(1,1) primary key,
-	nombre varchar(50) not null);
-	contraseña varchar(50) not null);
 	
 CREATE TABLE inscrito(
 	idIncrito int IDENTITY(1,1) primary key,

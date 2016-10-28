@@ -57,7 +57,7 @@ namespace ESNAJ
 
             cmm = new SqlCommand("SELECT MAX(idTorneo) FROM torneo", con);
             lector = cmm.ExecuteReader();
-            int nuevoId;
+            int nuevoId = 0;
             if (lector.HasRows)
             {
                 lector.Read();
@@ -68,13 +68,16 @@ namespace ESNAJ
             }
             lector.Close();
 
-            query = "INSERT INTO torneos VALUES (" + idEsc + ",'"+ tbNombre.Text + "','" + datepick.Text + "'," + idEsc + ")";
+            query = "INSERT INTO torneo VALUES (" + nuevoId + ",'"+ tbNombre.Text + "','" + datepick.Text + "'," + idEsc + ")";
             cmm = new SqlCommand(query, con);
             bool resp = false;
             if (cmm.ExecuteNonQuery() > 0)
                 resp = true;
             if (resp)
+            {
                 MessageBox.Show("Alta exitosa");
+                btRegresar_Click(sender, e);
+            }
             else
                 MessageBox.Show("No se dió de alta");
             con.Close();

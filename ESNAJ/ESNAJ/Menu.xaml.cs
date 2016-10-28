@@ -68,7 +68,9 @@ namespace ESNAJ
 
         private void btTorneos_Click(object sender, RoutedEventArgs e)
         {
-
+            Torneos t = new Torneos(this);
+            t.Show();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void btCargarDatos_Click(object sender, RoutedEventArgs e)
@@ -76,6 +78,11 @@ namespace ESNAJ
             ActualizaBase ab = new ActualizaBase();
             ab.Show();
             Close();
+        }
+
+        private void btWeb_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://localhost:54480/ESNAJ(WEB)/index.aspx");
         }
 
     }

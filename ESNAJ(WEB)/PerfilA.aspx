@@ -37,17 +37,17 @@
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label7" runat="server" Text="Contraseña anterior:" style="z-index: 1; left: 66px; top: 406px; position: absolute"></asp:Label>
-        <asp:TextBox ID="tbContraseñaAnt" runat="server" Width="215px" style="z-index: 1; left: 287px; top: 404px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbContraseñaAnt" runat="server" Width="215px" style="z-index: 1; left: 287px; top: 404px; position: absolute" TextMode="Password"></asp:TextBox>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label8" runat="server" Text="Nueva contraseña:" style="z-index: 1; left: 67px; top: 450px; position: absolute"></asp:Label>
-        <asp:TextBox ID="tbNuevaContra" runat="server" Width="214px" style="z-index: 1; left: 289px; top: 450px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbNuevaContra" runat="server" Width="214px" style="z-index: 1; left: 289px; top: 450px; position: absolute" TextMode="Password"></asp:TextBox>
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label9" runat="server" Text="Confirmar nueva contraseña:" style="z-index: 1; left: 64px; top: 491px; position: absolute"></asp:Label>
-        <asp:TextBox ID="tbNuevaContraConfirm" runat="server" Width="211px" style="z-index: 1; left: 291px; top: 493px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbNuevaContraConfirm" runat="server" Width="211px" style="z-index: 1; left: 291px; top: 493px; position: absolute" TextMode="Password"></asp:TextBox>
         <br />
         <br />
         <br />
@@ -59,7 +59,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
-        <asp:Button ID="btModificoInfo" runat="server" Text="Modificar información" OnClick="btModificoInfo_Click" style="z-index: 1; left: 191px; top: 554px; position: absolute" />
+        <asp:Button ID="btModificoInfo" runat="server" Text="Modificar información" OnClick="btModificoInfo_Click" style="z-index: 1; left: 191px; top: 546px; position: absolute" />
         <br />
         <br />
 

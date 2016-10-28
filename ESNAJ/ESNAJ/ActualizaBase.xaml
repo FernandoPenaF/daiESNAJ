@@ -10,7 +10,7 @@
         <TextBox x:Name="tbCat4" HorizontalAlignment="Left" Height="23" Margin="10,208,0,0" TextWrapping="Wrap" Text="Categoría 4" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPath4" Opacity="0.65" IsReadOnly="True"/>
         <Button x:Name="btActualiza" Content="Actualizar" HorizontalAlignment="Left" Margin="12,249,0,0" VerticalAlignment="Top" Width="75" Click="btActualiza_Click"/>
         <Button x:Name="btLimpia" Content="Limpiar" HorizontalAlignment="Left" Margin="12,297,0,0" VerticalAlignment="Top" Width="75" Click="btLimpia_Click"/>
-        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="353,297,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="353,297,0,0" VerticalAlignment="Top" Width="75" Click="btRegresar_Click"/>
         <TextBox x:Name="tbBase" HorizontalAlignment="Left" Height="23" Margin="308,123,0,0" TextWrapping="Wrap" Text="Base de datos" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPathDB" Opacity="0.65" IsReadOnly="True"/>
         <Label Content="Carga automática de base de datos" HorizontalAlignment="Left" Margin="227,83,0,0" VerticalAlignment="Top" Width="201"/>
         <Label Content="Carga automática con archivos de Excel" HorizontalAlignment="Left" Margin="112,22,0,0" VerticalAlignment="Top"/>

@@ -10,12 +10,14 @@
         <TextBox x:Name="tbCorreo" HorizontalAlignment="Left" Height="23" Margin="118,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="42,155,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="tbContraseña" HorizontalAlignment="Left" Margin="118,155,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Categoría:" HorizontalAlignment="Left" Margin="49,203,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbGrados" HorizontalAlignment="Left" Margin="118,207,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Categoría:" HorizontalAlignment="Left" Margin="274,105,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbGrados" HorizontalAlignment="Left" Margin="359,105,0,0" VerticalAlignment="Top" Width="256"/>
         <Button x:Name="btAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="359,174,0,0" VerticalAlignment="Top" Width="75" Click="btAgregar_Click"/>
         <Label Content="Escuela:" HorizontalAlignment="Left" Margin="274,56,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbEscuelas" HorizontalAlignment="Left" Margin="330,59,0,0" VerticalAlignment="Top" Width="285"/>
+        <ComboBox x:Name="cbEscuelas" HorizontalAlignment="Left" Margin="359,59,0,0" VerticalAlignment="Top" Width="256"/>
         <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="502,174,0,0" VerticalAlignment="Top" Width="75" Click="btRegresar_Click"/>
+        <Label Content="  Confirma &#xA;contraseña: " HorizontalAlignment="Left" Margin="39,186,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="tbContraseñaConf" HorizontalAlignment="Left" Margin="118,197,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

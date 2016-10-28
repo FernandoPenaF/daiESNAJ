@@ -233,5 +233,12 @@ namespace ESNAJ
         {
             setInitial();
         }
+
+        private void btRegresar_Click(object sender, RoutedEventArgs e)
+        {
+            Menu m = new Menu();
+            m.Show();
+            Close();
+        }
     }
 }

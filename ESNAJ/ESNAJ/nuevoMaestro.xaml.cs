@@ -35,7 +35,7 @@ namespace ESNAJ
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
             if(tbContraseña.Password == tbConfirmaContra.Password){
-                con = MainWindow.conectarBase();
+                con = Conexion.conectar();
                 cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
                 SqlDataReader lector = cmm.ExecuteReader();
                 int nuevoId;
