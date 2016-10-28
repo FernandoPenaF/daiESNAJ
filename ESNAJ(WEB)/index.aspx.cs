@@ -18,7 +18,7 @@ public partial class index : System.Web.UI.Page
         OdbcConnection conexion = null;
         try
         {
-            String conectar = "Driver={SQL Server Native Client 11.0};Server=112SALAS06;Uid=sa;Pwd=sqladmin;Database=ESNAJ;";
+            String conectar = "Driver={SQL Server Native Client 11.0};Server=112SALAS04;Uid=sa;Pwd=sqladmin;Database=ESNAJ;";
             conexion = new OdbcConnection(conectar);
             conexion.Open();
         }
@@ -84,5 +84,9 @@ public partial class index : System.Web.UI.Page
             this.Label1.Text = "Usuario o contraseña incorrectos";
 
         
+    }
+    protected void tbCorreo_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }
