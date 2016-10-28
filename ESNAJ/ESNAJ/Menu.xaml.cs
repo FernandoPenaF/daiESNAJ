@@ -55,5 +55,12 @@ namespace ESNAJ
             MessageBox.Show("Actualizacion terminada");
         }
 
+        private void btactualizarTor_Click(object sender, RoutedEventArgs e)
+        {
+            Actualiza a = new Actualiza(this);
+            a.Show();
+            this.Visibility = System.Windows.Visibility.Hidden;
+        }
+
     }
 }

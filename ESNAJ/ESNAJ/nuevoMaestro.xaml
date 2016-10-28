@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Agrega maestro" Height="375" Width="316">
     <Grid Margin="10,10,10,10">
-        <Label Content="Datos del nuevo jugador" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Datos del nuevo maestro" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="59,56,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="118,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Correo:" HorizontalAlignment="Left" Margin="64,105,0,0" VerticalAlignment="Top"/>

@@ -117,3 +117,5 @@ C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ_MarkupCompile.
 C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.g.resources
 C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.Properties.Resources.resources
 C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csproj.GenerateResource.Cache
+C:\Users\JSANCHEZAGU\Desktop\daiesnaj\ESNAJ\ESNAJ\obj\Debug\Actualiza.baml
+C:\Users\JSANCHEZAGU\Desktop\daiesnaj\ESNAJ\ESNAJ\obj\Debug\Actualiza.g.cs

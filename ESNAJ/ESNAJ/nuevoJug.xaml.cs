@@ -60,10 +60,15 @@ namespace ESNAJ
         private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
             con = MainWindow.conectarBase();
+            String query2 = "SELECT escuela.idEscuela FROM escuela WHERE nombre LIKE '" + cbEscuelas.Text +"'";
+            cmm = new SqlCommand(query2, con);
+            SqlDataReader lector = cmm.ExecuteReader();
+            lector.Read();
+            int idEsc = lector.GetInt32(0);
+            lector.Close();
             int id = ManejadorAlumnoN.nuevoId();
-            
-            Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, int.Parse(cbEscuelas.Text), cbGrados.Text);
-            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" + j.categoria + "','" + j.escuela + ")";
+            Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, idEsc, cbGrados.Text);
+            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" + j.categoria + "','" + j.escuela + "')";
             cmm = new SqlCommand(query,con);
             bool resp = false;
             if(cmm.ExecuteNonQuery() > 0)
