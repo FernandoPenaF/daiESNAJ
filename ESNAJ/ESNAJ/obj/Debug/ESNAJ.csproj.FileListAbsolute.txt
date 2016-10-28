@@ -57,3 +57,23 @@ C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\ESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
 C:\Users\LPENAF\Desktop\nuevoESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\bin\Debug\ESNAJ.exe.config
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.exe
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Actualiza.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\elimina.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\MainWindow.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.baml
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Actualiza.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\elimina.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\MainWindow.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Menu.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\modificar.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\nuevoJug.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\App.g.cs
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ_MarkupCompile.cache
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.g.resources
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documentos\Proyectos GitHub\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csproj.GenerateResource.Cache
