@@ -15,7 +15,7 @@ namespace ESNAJ
 
         public static SqlConnection conectar()
         {
-            SqlConnection nuevaCon = new SqlConnection("Data Source=112SALAS14;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin");
+            SqlConnection nuevaCon = new SqlConnection("Data Source=112SALAS06;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin");
             nuevaCon.Open();
             return nuevaCon;
         }

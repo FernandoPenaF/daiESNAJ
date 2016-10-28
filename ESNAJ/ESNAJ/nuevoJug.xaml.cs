@@ -76,7 +76,7 @@ namespace ESNAJ
             if(resp)
                 MessageBox.Show("Alta exitosa");
             else
-                MessageBox.Show("No se dió de alta");
+                MessageBox.Show("No se dió de altaJugador");
             con.Close();
 
         }

@@ -61,9 +61,9 @@ namespace ESNAJ
 
         private void btactualizarTor_Click(object sender, RoutedEventArgs e)
         {
-            Actualiza a = new Actualiza();
+            Actualiza a = new Actualiza(this);
             a.Show();
-            Close();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void btTorneos_Click(object sender, RoutedEventArgs e)

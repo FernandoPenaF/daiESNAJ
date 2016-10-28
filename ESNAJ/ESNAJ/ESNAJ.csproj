@@ -71,6 +71,11 @@
     <Compile Include="ActualizaBase.xaml.cs">
       <DependentUpon>ActualizaBase.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ESNAJDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Torneo.cs" />
     <Compile Include="TorneoG.cs" />
     <Page Include="Actualiza.xaml">
@@ -155,6 +160,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ESNAJDataSet.xsc">
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ESNAJDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ESNAJDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ESNAJDataSet.xss">
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
