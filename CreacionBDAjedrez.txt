@@ -49,5 +49,5 @@ CREATE TABLE participo(
 /*Se crea la tabla para el manejo de las personas de la institución*/
 CREATE TABLE usuariosGenerales(
 	idUsuario varchar(50) primary key,
-	contraseña varchar(50) not null
+	contra varchar(50) not null
 );
