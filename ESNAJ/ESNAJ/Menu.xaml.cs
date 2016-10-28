@@ -42,7 +42,7 @@ namespace ESNAJ
         {
             nuevoMaestro nvo = new nuevoMaestro(this);
             nvo.Show();
-            this.Close();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

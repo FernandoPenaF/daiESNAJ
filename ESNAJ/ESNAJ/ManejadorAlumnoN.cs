@@ -74,8 +74,15 @@ namespace ESNAJ
             SqlDataReader lector = cmd.ExecuteReader();
             if (lector.HasRows)
             {
-                lector.Read();
-                nuevoId = lector.GetInt32(0) + 1;
+                if (lector.IsDBNull(1))
+                {
+                    nuevoId = 1;
+                }
+                else
+                {
+                    lector.Read();
+                    nuevoId = lector.GetInt32(0) + 1;
+                }
             }
             lector.Close();
             con.Close();

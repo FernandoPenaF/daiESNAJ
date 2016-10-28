@@ -43,12 +43,9 @@ namespace ESNAJ
             String query = "SELECT nombre FROM escuela";
             cmm = new SqlCommand(query, con);
             SqlDataReader lector = cmm.ExecuteReader();
-            lector.Read();
-            int i = 0;
             while (lector.Read())
             {
-                cbEscuelas.Items.Add(lector.GetValue(i));
-                i++;
+                cbEscuelas.Items.Add(lector.GetValue(0));
             }
             cbEscuelas.SelectedIndex = 0;
             lector.Close();
@@ -66,7 +63,7 @@ namespace ESNAJ
             int id = ManejadorAlumnoN.nuevoId();
             
             Jugador j = new Jugador(id, tbNombre.Text, tbCorreo.Text, tbContraseña.Password, 0, int.Parse(cbEscuelas.Text), cbGrados.Text);
-            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" +  j.escuela + "','" + j.categoria + ")";
+            String query = "INSERT INTO alumno VALUES ('" + j.id + "', '" + j.nombre + "','" + j.correo + "','" + j.contra + "','" + j.puntos + "','" + j.categoria + "','" + j.escuela + ")";
             cmm = new SqlCommand(query,con);
             bool resp = false;
             if(cmm.ExecuteNonQuery() > 0)

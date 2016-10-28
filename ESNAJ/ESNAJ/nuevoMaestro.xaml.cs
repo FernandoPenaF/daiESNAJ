@@ -32,13 +32,7 @@ namespace ESNAJ
             InitializeComponent();
         }
 
-        private void btcancela_Click(object sender, RoutedEventArgs e)
-        {
-            ventanaAnt.Show();
-            this.Close();
-        }
-
-        private void btagrega_Click(object sender, RoutedEventArgs e)
+        private void btAgregar_Click(object sender, RoutedEventArgs e)
         {
             con = MainWindow.conectarBase();
             cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
@@ -58,5 +52,13 @@ namespace ESNAJ
                 MessageBox.Show("No se pudo agregar");
             con.Close();
         }
+
+        private void btRegresar_Click(object sender, RoutedEventArgs e)
+        {
+            ventanaAnt.Show();
+            this.Close();
+        }
+
+
     }
 }

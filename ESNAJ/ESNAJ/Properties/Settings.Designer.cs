@@ -42,5 +42,15 @@ namespace ESNAJ.Properties {
                 return ((string)(this["ESNAJConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=112SALAS09;Initial Catalog=ESNAJ;User ID=sa;Password=sqladmin")]
+        public string ESNAJConnectionString1 {
+            get {
+                return ((string)(this["ESNAJConnectionString1"]));
+            }
+        }
     }
 }
