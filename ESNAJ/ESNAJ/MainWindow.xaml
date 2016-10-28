@@ -9,11 +9,8 @@
         <TextBox x:Name="tbUsu" Height="29" Margin="197,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="159"/>
         <Button Content="Acceso" Margin="197,202,0,0" VerticalAlignment="Top" Height="29" HorizontalAlignment="Left" Width="159" Click="Button_Click_1"/>
         <PasswordBox x:Name="tbContra" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top" Width="159" Height="29" PasswordChar="●"/>
-<<<<<<< HEAD
-        <Button Content="Button" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-=======
         <Button Content="Prueba" HorizontalAlignment="Left" Margin="38,205,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
->>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
+
 
     </Grid>
 </Window>

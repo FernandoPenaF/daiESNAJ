@@ -41,29 +41,22 @@ namespace ESNAJ
         private void btagrega_Click(object sender, RoutedEventArgs e)
         {
             con = MainWindow.conectarBase();
-<<<<<<< HEAD
             cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
             SqlDataReader lector = cmm.ExecuteReader();
             int nvoID = lector.GetInt32(0) + 1;
             String query = "INSERT INTO maestro VALUES (" + nvoID + ",'" + tbNombre + "')";
-=======
-            String query = "INSERT INTO maestro VALUES ('"+ tbNombre.Text +"')";
->>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
+
             cmm = new SqlCommand(query, con);
             bool resp = false;
             if (cmm.ExecuteNonQuery() > 0)
                 resp = true;
-<<<<<<< HEAD
             con.Close();
-=======
->>>>>>> e88b13edc4a103020a8c972d9f179bfa43ae9784
+
             if (resp)
                 MessageBox.Show("Se agregó correctamente");
             else
                 MessageBox.Show("No se pudo agregar");
             con.Close();
         }
-    }
-
     }
 }
