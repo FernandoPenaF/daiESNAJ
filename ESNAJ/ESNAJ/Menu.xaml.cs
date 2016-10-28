@@ -66,5 +66,17 @@ namespace ESNAJ
             this.Visibility = System.Windows.Visibility.Hidden;
         }
 
+        private void btTorneos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btCargarDatos_Click(object sender, RoutedEventArgs e)
+        {
+            ActualizaBase ab = new ActualizaBase();
+            ab.Show();
+            Close();
+        }
+
     }
 }

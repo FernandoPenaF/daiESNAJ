@@ -1,15 +1,15 @@
 ﻿<Window x:Class="ESNAJ.Menu"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Menu" Height="300" Width="400">
+        Title="Menu" Height="300" Width="494">
     <Grid Margin="15,15,15,15">
         <Label Content="Bienvenido" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16"/>
         <Button x:Name="btNuevoJugador" Content="Nuevo jugador" HorizontalAlignment="Left" Margin="30,54,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click_2"/>
-        <Button x:Name="btTorneos" Content="Torneos" HorizontalAlignment="Left" Margin="214,54,0,0" VerticalAlignment="Top" Width="120" Height="35"/>
-        <Button x:Name="btNuevoMaestro" Content="Nuevo Maestro" HorizontalAlignment="Left" Margin="30,127,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btNuevoMaestro_Click"/>
-        <Button x:Name="brCerrar" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="232,195,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click_1"/>
-        <Button x:Name="btactualizarTor" Content="Actualizar &#xD;&#xA;  Torneo" HorizontalAlignment="Left" Margin="214,127,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btactualizarTor_Click"/>
-        <Button Content="pruebacarga" HorizontalAlignment="Left" Margin="30,195,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <Button x:Name="btTorneos" Content="Torneos" HorizontalAlignment="Left" Margin="326,54,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btTorneos_Click"/>
+        <Button x:Name="btNuevoMaestro" Content="Nuevo Maestro" HorizontalAlignment="Left" Margin="184,54,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btNuevoMaestro_Click"/>
+        <Button x:Name="brCerrar" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="326,195,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click_1"/>
+        <Button x:Name="btactualizarTor" Content="Actualizar &#xD;&#xA;  Torneo" HorizontalAlignment="Left" Margin="30,117,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btactualizarTor_Click"/>
+        <Button x:Name="btCargarDatos" Content="Cargar datos" HorizontalAlignment="Left" Margin="184,117,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="btCargarDatos_Click"/>
 
     </Grid>
 </Window>

@@ -11,7 +11,7 @@ namespace ESNAJ
     class ManejadorAlumnoN
     {
 
-        public static bool alta(Jugador j)
+        public static bool altaJugador(Jugador j)
         {
             bool resp = false;
             SqlConnection con = Conexion.conectar();
@@ -43,7 +43,7 @@ namespace ESNAJ
                 if(nvoId != -1){
                     j.id = nvoId;
                     j.contra = "default";
-                    ManejadorAlumnoN.alta(j); 
+                    ManejadorAlumnoN.altaJugador(j); 
                 }
             }
             else

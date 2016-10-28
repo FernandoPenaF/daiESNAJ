@@ -68,12 +68,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActualizaBase.xaml.cs">
+      <DependentUpon>ActualizaBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ESNAJDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Torneo.cs" />
     <Compile Include="TorneoG.cs" />
     <Compile Include="Torneos.xaml.cs">
       <DependentUpon>Torneos.xaml</DependentUpon>
     </Compile>
     <Page Include="Actualiza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActualizaBase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,16 +109,6 @@
       <DependentUpon>elimina.xaml</DependentUpon>
     </Compile>
     <Compile Include="Escuela.cs" />
-    <Compile Include="ESNAJDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ESNAJDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Excel.cs" />
     <Compile Include="Jugador.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -175,17 +177,6 @@
     </None>
     <None Include="ESNAJDataSet.xss">
       <DependentUpon>ESNAJDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ESNAJDataSet1.xsc">
-      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ESNAJDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ESNAJDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ESNAJDataSet1.xss">
-      <DependentUpon>ESNAJDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

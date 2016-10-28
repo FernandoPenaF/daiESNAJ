@@ -1,0 +1,24 @@
+﻿<Window x:Class="ESNAJ.ActualizaBase"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ActualizaBase" Height="364" Width="454.55">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Actualizar base de datos" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Height="27" Width="145"/>
+        <TextBox x:Name="tbCat1" HorizontalAlignment="Left" Height="23" Margin="10,124,0,0" TextWrapping="Wrap" Text="Categoría 1" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPath1" Opacity="0.65" IsReadOnly="True"/>
+        <TextBox x:Name="tbCat2" HorizontalAlignment="Left" Height="23" Margin="10,152,0,0" TextWrapping="Wrap" Text="Categoría 2" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPath2" Opacity="0.65" IsReadOnly="True"/>
+        <TextBox x:Name="tbCat3" HorizontalAlignment="Left" Height="23" Margin="10,180,0,0" TextWrapping="Wrap" Text="Categoría 3" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPath3" Opacity="0.65" IsReadOnly="True"/>
+        <TextBox x:Name="tbCat4" HorizontalAlignment="Left" Height="23" Margin="10,208,0,0" TextWrapping="Wrap" Text="Categoría 4" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPath4" Opacity="0.65" IsReadOnly="True"/>
+        <Button x:Name="btActualiza" Content="Actualizar" HorizontalAlignment="Left" Margin="12,249,0,0" VerticalAlignment="Top" Width="75" Click="btActualiza_Click"/>
+        <Button x:Name="btLimpia" Content="Limpiar" HorizontalAlignment="Left" Margin="12,297,0,0" VerticalAlignment="Top" Width="75" Click="btLimpia_Click"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="353,297,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="tbBase" HorizontalAlignment="Left" Height="23" Margin="308,123,0,0" TextWrapping="Wrap" Text="Base de datos" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPathDB" Opacity="0.65" IsReadOnly="True"/>
+        <Label Content="Carga automática de base de datos" HorizontalAlignment="Left" Margin="227,83,0,0" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Carga automática con archivos de Excel" HorizontalAlignment="Left" Margin="112,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Carga automática de escuelas" HorizontalAlignment="Left" Margin="261,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEscuela" HorizontalAlignment="Left" Height="23" Margin="308,221,0,0" TextWrapping="Wrap" Text="Escuela" VerticalAlignment="Top" Width="120" MouseDoubleClick="getPathEsc" Opacity="0.65" IsReadOnly="True"/>
+        <Button x:Name="btCargaBase" Content="Carga de base" HorizontalAlignment="Left" Margin="338,153,0,0" VerticalAlignment="Top" Width="90" Click="btCargaBase_Click"/>
+        <Button x:Name="btCargaEscuela" Content="Carga de escuelas" HorizontalAlignment="Left" Margin="326,249,0,0" VerticalAlignment="Top" Width="102" Click="btCargaEscuela_Click"/>
+
+    </Grid>
+</Window>
+

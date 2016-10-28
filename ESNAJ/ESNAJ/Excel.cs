@@ -16,7 +16,7 @@ namespace ESNAJ
         public static List<Jugador> infoActualizar(String nomArchivo)
         {
             List<Jugador> resp = new List<Jugador>();
-            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
+            FileStream archivo = new FileStream(nomArchivo, FileMode.Open, FileAccess.Read);
             HSSFWorkbook libro = new HSSFWorkbook(archivo);
             ISheet hoja = libro.GetSheetAt(0);
             IRow fila;
@@ -74,7 +74,7 @@ namespace ESNAJ
         public static List<Jugador> altaInicial(String nomArchivo)
         {
             List<Jugador> resp = new List<Jugador>();
-            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
+            FileStream archivo = new FileStream(nomArchivo, FileMode.Open, FileAccess.Read);
             HSSFWorkbook libro = new HSSFWorkbook(archivo);
             ISheet hoja = libro.GetSheetAt(0);
             IRow fila;
@@ -116,7 +116,7 @@ namespace ESNAJ
         public static List<Escuela> getEscuelas(String nomArchivo)
         {
             List<Escuela> resp = new List<Escuela>();
-            FileStream archivo = new FileStream(nomArchivo + ".xls", FileMode.Open, FileAccess.Read);
+            FileStream archivo = new FileStream(nomArchivo, FileMode.Open, FileAccess.Read);
             HSSFWorkbook libro = new HSSFWorkbook(archivo);
             ISheet hoja = libro.GetSheetAt(0);
             IRow fila;
@@ -130,7 +130,7 @@ namespace ESNAJ
 
                 fila = hoja.GetRow(i);
                 celda = fila.GetCell(0);
-                id = (int) celda.NumericCellValue;
+                id = (int)celda.NumericCellValue;
                 celda = fila.GetCell(1);
                 nombre = celda.StringCellValue;
                 e = new Escuela(id, nombre);
@@ -138,6 +138,5 @@ namespace ESNAJ
             }
             return resp;
         }
-
     }
 }
