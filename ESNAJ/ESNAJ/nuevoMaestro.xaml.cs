@@ -32,31 +32,50 @@ namespace ESNAJ
             InitializeComponent();
         }
 
-        private void btcancela_Click(object sender, RoutedEventArgs e)
+        private void btAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            if(tbContraseña.Password == tbConfirmaContra.Password){
+                con = MainWindow.conectarBase();
+                cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
+                SqlDataReader lector = cmm.ExecuteReader();
+                int nuevoId;
+                if (lector.HasRows)
+                {
+                    lector.Read();
+                    if (lector.IsDBNull(0))
+                        nuevoId = 1;
+                    else
+                        nuevoId = lector.GetInt32(0) + 1;
+                }
+                lector.Close();
+                String query = "INSERT INTO maestro VALUES ('" + tbNombre.Text + "','" + tbCorreo.Text + "','" + tbContraseña.Password + "')";
+                cmm = new SqlCommand(query, con);
+                bool resp = false;
+                if (cmm.ExecuteNonQuery() > 0)
+                    resp = true;
+                con.Close();
+                if (resp)
+                {
+                    MessageBox.Show("Se agregó correctamente");
+                    ventanaAnt.Show();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("No se pudo agregar");
+                con.Close();
+            }else{
+                MessageBox.Show("Las contraseñas deben coincidir");
+                tbConfirmaContra.Clear();
+                tbContraseña.Clear();
+            }
+        }
+
+        private void btRegresar_Click(object sender, RoutedEventArgs e)
         {
             ventanaAnt.Show();
             this.Close();
         }
 
-        private void btagrega_Click(object sender, RoutedEventArgs e)
-        {
-            con = MainWindow.conectarBase();
-            cmm = new SqlCommand("SELECT MAX(idMaestro) FROM maestro", con);
-            SqlDataReader lector = cmm.ExecuteReader();
-            int nvoID = lector.GetInt32(0) + 1;
-            String query = "INSERT INTO maestro VALUES (" + nvoID + ",'" + tbNombre + "')";
 
-            cmm = new SqlCommand(query, con);
-            bool resp = false;
-            if (cmm.ExecuteNonQuery() > 0)
-                resp = true;
-            con.Close();
-
-            if (resp)
-                MessageBox.Show("Se agregó correctamente");
-            else
-                MessageBox.Show("No se pudo agregar");
-            con.Close();
-        }
     }
 }
