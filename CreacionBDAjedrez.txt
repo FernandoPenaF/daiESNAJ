@@ -40,15 +40,15 @@ CREATE TABLE participo(
 	idAlumno int references alumno,
 	idTorneo int references torneo);
 
-
 /*Se crea la tabla para el manejo de las personas de la institución*/
 CREATE TABLE usuariosGenerales(
 	idUsuario varchar(50) primary key,
-	contraseña varchar(50) not null
-);
+	contraseña varchar(50) not null);
 	
 CREATE TABLE inscrito(
 	idIncrito int IDENTITY(1,1) primary key,
 	idTorneo int REFERENCES torneo,
-	idAlumno int REFERENCES alumno
-);
+	idAlumno int REFERENCES alumno);
+
+/*PARA CREAR LA CUENTA DEL ADMINISTRADOR*/
+INSERT INTO usuariosGenerales VALUES('admin', '123');
