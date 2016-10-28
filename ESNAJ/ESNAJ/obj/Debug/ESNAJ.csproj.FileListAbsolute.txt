@@ -117,7 +117,12 @@ C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.Properties.Res
 C:\Users\JSANCHEZAGU\Desktop\daiEsnaj\ESNAJ\ESNAJ\obj\Debug\ESNAJ.csproj.GenerateResource.Cache
 C:\Users\JSANCHEZAGU\Desktop\daiesnaj\ESNAJ\ESNAJ\obj\Debug\Actualiza.baml
 C:\Users\JSANCHEZAGU\Desktop\daiesnaj\ESNAJ\ESNAJ\obj\Debug\Actualiza.g.cs
+<<<<<<< HEAD
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Actualiza.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ActualizaBase.baml
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Actualiza.g.cs
 C:\Users\LPENAF\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\ActualizaBase.g.cs
+=======
+C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Torneos.baml
+C:\Users\JSANCHEZAGU\Desktop\daiESNAJ\ESNAJ\ESNAJ\obj\Debug\Torneos.g.cs
+>>>>>>> 3515259994d57f9ab659afe31092ca8e249308bc
